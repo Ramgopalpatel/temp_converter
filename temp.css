@@ -1,0 +1,97 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  padding-top: 50px;
+  background-color: #f0f8ff;
+  user-select: none;
+}
+.mainDiv {
+  box-shadow: -0.5px 2px 2px 6px #cecece;
+  display: flex;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  width: 28rem;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 50px;
+}
+.signalConnectivity {
+  display: flex;
+  padding-left: 55%;
+}
+.signalConnectivity div {
+  margin-right: 10px;
+}
+#currentTime {
+  font-size: large;
+  width: 8rem;
+}
+.heading {
+  text-align: center;
+}
+/* input css */
+.inputSection {
+  margin-top: 4vmax;
+  display: flex;
+  justify-content: center;
+}
+.inputTemp {
+  margin-right: 60px;
+  border-bottom: 1px solid #646161;
+}
+.inputType {
+  margin-left: 50px;
+  border-bottom: 1px solid #646161;
+}
+#inputTemp {
+  margin-top: 10px;
+  border: none;
+  width: 10rem;
+  font-weight: bolder;
+  padding: 5px 5px 5px 10px;
+  display: block;
+  font-size: larger;
+}
+
+#selectType {
+  margin-top: 10px;
+  font-size: larger;
+  width: 10rem;
+  border: none;
+  padding: 5px 5px 5px 10px;
+  font-weight: bolder;
+  display: block;
+}
+/* result section */
+.resultSection {
+  margin: 20px auto;
+  border-bottom: 1px solid #646161;
+}
+.resultSection h1 {
+  margin: 20px auto 5px auto;
+}
+.convertSection {
+  margin-top: 20px;
+}
+/* convert button */
+#convertBtn {
+  font-weight: bolder;
+  font-size: larger;
+  display: block;
+  width: 100%;
+  color: white;
+  border: #028afa;
+  padding: 2vmax;
+  border-radius: 20px;
+  background-color: #028afa;
+  transition: all 1s;
+}
+#convertBtn:hover{
+    background-color: #0276d4;
+}

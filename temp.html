@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature converter</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- External css link -->
+    <link rel="stylesheet" href="./temp.css" />
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div>
+        <nav>
+          <div><h1 id="currentTime">9:31:54 PM</h1></div>
+          <div class="signalConnectivity">
+            <div><i class="fa-sharp fa-solid fa-signal"></i></div>
+            <div><i class="fa-solid fa-wifi"></i></div>
+            <div><i class="fa-solid fa-battery-full"></i></div>
+          </div>
+        </nav>
+        <h1 class="heading">Temperature converter</h1>
+        <form id="calculateTemp" onsubmit="calculateTemp(); return false;">
+          <div class="inputSection">
+            <div class="inputTemp">
+              <label for="inputTemp">Degrees</label>
+              <input type="number" name="inputTemp" id="inputTemp"  />
+            </div>
+            <div class="inputType">
+              <label for="selectType">Type</label>
+              <select name="selectType" id="selectType">
+                <option value="Cel">°Celsius</option>
+                <option value="Kel">Kelvin</option>
+                <option value="Fah">°Fahrenheit</option>
+                <option value="Rea">°Reaumur</option>
+              </select>
+            </div>
+          </div>
+          <div class="resultSection">
+            <p>Result</p>
+            <h1 id="resultContainer">=</h1>
+          </div>
+          <div class="convertSection"> 
+            <input type="submit" id="convertBtn" value="Convert" name="temp" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- External javascript -->
+    <script src="./temp.js"></script>
+  </body>
+</html>
